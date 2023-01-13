@@ -272,11 +272,17 @@ console.log('ELEM3');
 console.log(elem3, '\n');
 
 console.log('ADD');
+console.time('Add');
 console.log(field.addGalois(elem1, elem2), '\n');
+console.timeEnd('Add');
 console.log('MUL');
+console.time('Mul');
 console.log(field.mul(elem1, elem2), '\n');
+console.timeEnd('Mul');
 console.log('POW CHECK');
+console.time('Pow');
 console.log(field.pow(elem1, Math.pow(2, field.m) - 1), '\n');
+console.timeEnd('Pow');
 console.log('TRACE');
 console.log(field.trace(elem1), '\n');
 console.log('INVERSE CHECK');
@@ -285,6 +291,6 @@ console.log('QUADRATIC');
 console.log(field.powQuadratic(elem1));
 
 
-console.log(field.addGalois(elem1, elem1));
+
 
 
